@@ -1,2 +1,15 @@
 <!--pages/login/login.wxml-->
-<text>pages/login/login.wxml</text>
+<view>
+  <view class="welcomeInfo">
+    <text>欢迎进入 OWN-Learning!</text>
+  </view>
+  <view class="loginInfo">
+    <text>请登录账号：</text>
+  </view>
+  <view class="loginformInfo">
+    <form>
+      <text>账号</text><input placeholder-style="color:gray" placeholder="请输入账号"></input>
+    </form>
+  </view>
+</view>
+

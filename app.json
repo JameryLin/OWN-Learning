@@ -1,6 +1,16 @@
 {
   "pages": [
     "pages/login/login",
+    "pages/signup/signup",
+    "pages/sysAdmin/sysAdmin",
+    "pages/courseManage/courseManage",
+    "pages/courseReBasic/courseReBasic",
+    "pages/courseReDetail/courseReDetail",
+    "pages/learnUser/learnUser",
+    "pages/learnSpace/learnSpace",
+    "pages/learnCollect/learnCollect",
+    "pages/courseInfo/courseInfo",
+    "pages/courseLearn/courseLearn",
     "pages/index/index",
     "pages/logs/logs"
   ],
