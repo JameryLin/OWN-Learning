@@ -1,19 +1,55 @@
 /* pages/login/login.wxss */
 .welcomeInfo{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 60rpx;
+  justify-content: center;
+  margin-top: 60rpx;
   font-size: 44rpx 
 }
-.loginInfo{
+.loginGuide{
   display: flex;
   flex-direction: column;
-  padding-left: 40rpx;
-  padding-top: 72rpx
+  margin-left: 40rpx;
+  margin-top: 72rpx;
+  margin-bottom: 32rpx
 }
-.loginformInfo{
+.loginItem{
   display: flex;
-  padding-top: 32rpx;
-  padding-left: 60rpx
+  height: 88rpx;
+  background-color: #fff;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  align-items: center;
+  margin:2rpx
 }
+.loginForget{
+  font-size:28rpx;
+  text-decoration: underline;
+  float:right;
+  margin-right:28rpx;
+  margin-top:10rpx;
+  color: #179E16
+}
+.loginButton{
+  width: 400rpx;
+  height: 92rpx;
+  margin-top: 80rpx;
+  font-size: 36rpx;
+  background-color: #1AAD19;
+  color: #fff;
+  border-radius: 10rpx
+}
+.loginButton::after{
+  border: 2rpx solid #179E16
+}
+.loginReset{
+  width: 304rpx;
+  height: 64rpx;
+  font-size: 28rpx;
+  background-color: transparent;
+  color: #1AAD19;
+  border-radius: 6rpx
+}
+.loginReset::after{
+  border: 2rpx solid #1AAD19
+}
+

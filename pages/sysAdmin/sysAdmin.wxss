@@ -1,1 +1,37 @@
 /* pages/sysAdmin/sysAdmin.wxss */
+.welcomeInfo{
+  display: flex;
+  margin-top: 60rpx;
+  margin-left: 70rpx;
+  font-size: 40rpx 
+}
+.adminButton{
+  width: 452rpx;
+  height: 92rpx;
+  font-size: 36rpx;
+  background-color: #1AAD19;
+  color: #fff;
+  border-radius: 10rpx
+}
+.adminButton::after{
+  border: 2rpx solid #179E16
+}
+.adminMoreing{
+  display: flex;
+  justify-content: center;
+  margin-top: 200rpx;
+  font-size:26rpx;
+  text-decoration: underline;
+  color: #000000;
+  opacity: 0.5
+}
+.adminQuit{
+  width: 120rpx;
+  height: 70rpx;
+  font-size: 30rpx;
+  float: left;
+  position: fixed;
+  bottom: 0;
+  margin-left: 48rpx;
+  margin-bottom: 48rpx
+}

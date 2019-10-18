@@ -1,3 +1,8 @@
 {
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "课程管理",
+  "navigationBarTextStyle": "black",
+
   "usingComponents": {}
 }

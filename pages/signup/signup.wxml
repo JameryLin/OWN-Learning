@@ -1,2 +1,27 @@
 <!--pages/signup/signup.wxml-->
-<text>pages/signup/signup.wxml</text>
+<view>
+  <view class="welcomeInfo">
+    <text>加入OWN-Learning，一起来学习吧!</text>
+  </view>
+  <view>
+    <form>
+      <view class="signupItem" style="margin-top:80rpx;margin-bottom:40rpx">
+        <text space="ensp">  昵称    </text>
+        <input placeholder-style="color:gray" placeholder="请设置昵称" confirm-type="done"/>
+      </view>
+      <view class="signupItem">
+        <text space="ensp">  账号    </text>
+        <input placeholder-style="color:gray" placeholder="请输入邮箱" confirm-type="done"/>
+      </view>
+      <view class="signupItem">
+        <text space="ensp">  密码    </text>
+        <input placeholder-style="color:gray" placeholder="请设置密码" confirm-type="done" password="true"/>
+      </view>
+      <view class="signupItem">
+        <text space="ensp">确认密码  </text>
+        <input placeholder-style="color:gray" placeholder="请设置密码" confirm-type="done" password="true"/>
+      </view>
+      <button class="signupButton" form-type="submit">立即注册</button>
+    </form>
+  </view>
+</view>

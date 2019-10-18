@@ -3,12 +3,24 @@
   <view class="welcomeInfo">
     <text>欢迎进入 OWN-Learning!</text>
   </view>
-  <view class="loginInfo">
+  <view class="loginGuide">
     <text>请登录账号：</text>
   </view>
-  <view class="loginformInfo">
+  
+  <view>
     <form>
-      <text>账号</text><input placeholder-style="color:gray" placeholder="请输入账号"></input>
+      <view class="loginItem">
+        <text space="ensp">  账号    </text>
+        <input placeholder-style="color:gray" placeholder="请输入账号" confirm-type="done"/>
+      </view>
+      <view class="loginItem">
+        <text space="ensp">  密码    </text>
+        <input placeholder-style="color:gray" placeholder="请输入密码" confirm-type="done" password="true"/>
+      </view>
+      <text class="loginForget">忘记密码?</text>
+      <button class="loginButton" form-type="submit">登录</button>
+      <button class="loginReset" style="margin-top:56rpx">重置信息</button>
+      <button class="loginReset" style="margin-top:32rpx">注册账号</button>
     </form>
   </view>
 </view>

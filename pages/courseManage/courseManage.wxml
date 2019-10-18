@@ -1,2 +1,26 @@
 <!--pages/courseManage/courseManage.wxml-->
-<text>pages/courseManage/courseManage.wxml</text>
+<view>
+  <view style="display:flex">
+    <text class="allCourse">当前课程列表</text>
+    <text class="pressDelete">长按列表项可删除课程</text>
+  </view>
+  
+  <view class="courseItem">
+    <text>{{coursename}}</text>
+    <label class="seeMore"> ❯ </label>
+  </view>
+  <view class="courseItem">
+    <text>{{coursename}}</text>
+    <label class="seeMore"> ❯ </label>
+  </view>
+  <view class="courseItem">
+    <text>{{coursename}}</text>
+    <label class="seeMore"> ❯ </label>
+  </view>
+  <view class="courseItem">
+    <text>{{coursename}}</text>
+    <label class="seeMore"> ❯ </label>
+  </view>
+  
+  
+</view>
