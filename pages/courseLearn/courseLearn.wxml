@@ -1,2 +1,25 @@
 <!--pages/courseLearn/courseLearn.wxml-->
-<text>pages/courseLearn/courseLearn.wxml</text>
+<view>
+  <text space="ensp" class="sectionInfo">第{{sectionNumber}}节  {{sectionName}}</text>
+  <text space="emsp" class="sectionContent">{{sectionContent}}</text>
+  
+  <button class="nextSectionBt">下一节</button>
+  <button class="catalogueBt">目录</button>
+
+  <!--目录列表，当前为隐藏状态，由display:none/block控制隐藏/显示-->
+  <view style="display:none" class="catalogueArea">
+    <view class="sectionItem">
+      <text style="width:670rpx">1第{{sectionNumber}}节 {{sectionName}}</text>
+      <icon style="display:block" type="success_no_circle" size="30rpx" color="#1AAD19"></icon>
+    </view>
+    <view class="sectionItem">
+      <text style="width:670rpx">2第{{sectionNumber}}节 {{sectionName}}</text>
+      <icon style="display:none" type="success_no_circle" size="30rpx" color="#1AAD19"></icon>
+    </view>
+    <view class="sectionItem">
+      <text style="width:670rpx">3第{{sectionNumber}}节 {{sectionName}}</text>
+      <icon style="display:none" type="success_no_circle" size="30rpx" color="#1AAD19"></icon>
+    </view>
+  </view>
+
+</view>

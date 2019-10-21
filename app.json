@@ -1,6 +1,7 @@
 {
   "pages": [
 
+    "pages/courseLearn/courseLearn",
     "pages/courseInfo/courseInfo",
     "pages/learnCollect/learnCollect",
     "pages/learnSpace/learnSpace",
@@ -12,7 +13,6 @@
     "pages/signup/signup",
     "pages/login/login",    
     
-    "pages/courseLearn/courseLearn",
     "pages/index/index",
     "pages/logs/logs"
   ],

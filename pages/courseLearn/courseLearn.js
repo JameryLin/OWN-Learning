@@ -5,14 +5,20 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    courseName:'课程名称XX',
+    sectionNumber:'一',
+    sectionName:'本节名称',
+    sectionContent:'本节课程的具体内容，本节主要围绕XXX展开阐述，首先，我们来看一个案例。XXXX....'
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var name = this.data.courseName;
+    wx.setNavigationBarTitle({
+      title: name,
+    })
   },
 
   /**

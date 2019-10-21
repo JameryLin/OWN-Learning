@@ -1,1 +1,64 @@
 /* pages/courseLearn/courseLearn.wxss */
+/*
+page{
+  background-color: #fff
+}
+*/
+.sectionInfo{
+  display: flex;
+  margin-top: 28rpx;
+  margin-bottom: 40rpx;
+  margin-left: 28rpx;
+  margin-right: 28rpx;
+  font-size: 40rpx;
+  color: #000
+}
+.sectionContent{
+  display: flex;
+  line-height: 56rpx;
+  margin-left: 36rpx;
+  margin-right: 36rpx;
+  font-size: 36rpx;
+  color: #000;
+}
+.nextSectionBt{
+  width: 220rpx;
+  height: 90rpx;
+  margin-top: 80rpx;
+  font-size: 36rpx;
+  background-color: transparent;
+  color: #1AAD19;
+  border-radius: 8rpx
+}
+.nextSectionBt::after{
+  border: 4rpx solid #1AAD19
+}
+.catalogueBt{
+  width: 120rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  font-size: 36rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 0;  left: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #353535;
+  border-radius: 10rpx
+}
+.catalogueBt::after{
+  border: 4rpx solid #353535
+}
+.catalogueArea{
+  position: fixed;
+  bottom: 122rpx
+}
+.sectionItem{
+  display: flex;
+  height: 88rpx;
+  background-color: #fff;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  align-items: center;
+  margin:2rpx
+}
