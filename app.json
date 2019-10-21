@@ -1,6 +1,8 @@
 {
   "pages": [
-    
+
+    "pages/learnCollect/learnCollect",
+    "pages/learnSpace/learnSpace",
     "pages/learnUser/learnUser",
     "pages/courseReDetail/courseReDetail",
     "pages/courseReBasic/courseReBasic",
@@ -10,9 +12,6 @@
     "pages/login/login",
     
     
-    
-    "pages/learnSpace/learnSpace",
-    "pages/learnCollect/learnCollect",
     "pages/courseInfo/courseInfo",
     "pages/courseLearn/courseLearn",
     "pages/index/index",

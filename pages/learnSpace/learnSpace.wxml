@@ -1,2 +1,52 @@
 <!--pages/learnSpace/learnSpace.wxml-->
-<text>pages/learnSpace/learnSpace.wxml</text>
+<view>
+  <text class="partTitle">✨正在学习</text>
+  <view class="partItem">
+    <view style="display:flex;flex-direction:column">
+      <text class="courseName">课程名称</text>
+      <text class="courseProcess">学习进度: {{learnProcess}}</text>
+    </view>
+    <button class="startButton">开始</button>
+  </view>
+
+  <view class="partItem">
+    <view style="display:flex;flex-direction:column">
+      <text class="courseName">课程名称</text>
+      <text class="courseProcess">学习进度: {{learnProcess}}</text>
+    </view>
+    <button class="startButton">开始</button>
+  </view>
+
+  <text class="partTitle">✨未开始</text>
+  <view class="partItem">
+    <view style="display:flex;flex-direction:column">
+      <text class="courseName">课程名称</text>
+      <text class="courseProcess">{{courseIntroS}}</text>
+    </view>
+    <button class="startButton">开始</button>
+  </view>
+
+  <view class="partItem">
+    <view style="display:flex;flex-direction:column">
+      <text class="courseName">课程名称</text>
+      <text class="courseProcess">{{courseIntroS}}</text>
+    </view>
+    <button class="startButton">开始</button>
+  </view>
+
+  <text class="partTitle">✨已完成</text>
+  <view class="partItem">
+    <view style="display:flex;flex-direction:column">
+      <text class="courseName">课程名称</text>
+      <text class="courseProcess">{{courseIntroS}}</text>
+    </view>
+  </view>
+
+  <view class="partItem" style="margin-bottom:40rpx">
+    <view style="display:flex;flex-direction:column">
+      <text class="courseName">课程名称</text>
+      <text class="courseProcess">{{courseIntroS}}</text>
+    </view>
+  </view>
+
+</view>

@@ -1,3 +1,8 @@
 {
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "OWN收藏夹",
+  "navigationBarTextStyle": "black",
+  
   "usingComponents": {}
 }

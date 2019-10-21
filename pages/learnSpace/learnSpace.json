@@ -1,3 +1,8 @@
 {
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "OWN学习空间",
+  "navigationBarTextStyle": "black",
+  
   "usingComponents": {}
 }

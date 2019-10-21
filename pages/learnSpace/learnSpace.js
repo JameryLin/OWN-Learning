@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    learnProcess:'30%',
+    courseIntroS:'课程简介，显示一行，后面的内容...'
   },
 
   /**

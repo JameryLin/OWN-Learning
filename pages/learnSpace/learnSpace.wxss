@@ -1,1 +1,40 @@
 /* pages/learnSpace/learnSpace.wxss */
+.partTitle{
+  display: flex;
+  margin-top: 28rpx;
+  margin-bottom: 14rpx;
+  margin-left: 28rpx;
+  font-size: 34rpx;
+  opacity: 0.6
+}
+.partItem{
+  display: flex;
+  height: 176rpx;
+  background-color: #fff;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  align-items: center;
+  margin:2rpx
+}
+.courseName{
+  width: 550rpx;
+  font-size: 34rpx;
+  color: #000;
+  margin-bottom: 20rpx
+}
+.courseProcess{
+  font-size: 26rpx;
+  color: #999999
+}
+.startButton{
+  width: 120rpx;
+  height: 60rpx;
+  margin-left: 20rpx;
+  font-size: 26rpx;
+  background-color: transparent;
+  color: #1AAD19;
+  border-radius: 8rpx
+}
+.startButton::after{
+  border: 4rpx solid #1AAD19
+}
