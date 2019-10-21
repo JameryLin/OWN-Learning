@@ -1,2 +1,23 @@
 <!--pages/courseInfo/courseInfo.wxml-->
-<text>pages/courseInfo/courseInfo.wxml</text>
+<view>
+  <view class="courseInfo">
+    <text class="courseName">课程名称</text>
+    <button class="collectButton">☆</button>
+    <text space="ensp" class="integral">我的积分: {{integral}}</text>
+  </view>
+
+  <view class="courseBasicInfoArea">
+    <text space="ensp" class="courseBasicInfo">类别:  {{courseCategory}}</text>
+    <text space="ensp" class="courseBasicInfo">讲师:  {{courseTeacher}}</text>
+    <text space="ensp" class="courseBasicInfo">来源:  {{courseSource}}</text>
+    <text space="ensp" class="courseBasicInfo">加入条件:  {{courseIntegral}} 积分</text>
+  </view>
+
+  <view class="courseIntroArea">
+    <text class="courseIntroTitle">简介</text>
+    <text class="courseIntro">{{courseIntro}}</text>
+  </view>
+
+  <button class="joinButton">{{joinButton}}</button>
+  
+</view>

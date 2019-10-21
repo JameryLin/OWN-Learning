@@ -1,1 +1,74 @@
 /* pages/courseInfo/courseInfo.wxss */
+.courseInfo{
+  display: flex;
+}
+.courseName{
+  display: flex;
+  font-size: 40rpx;
+  margin-top: 28rpx;
+  margin-bottom: 32rpx;
+  margin-left: 28rpx;
+  margin-right: 20rpx
+}
+.collectButton{
+  line-height: normal;
+  height: 50rpx;
+  background-color: transparent;
+  color: #F8AC15;
+  padding: 0rpx;
+  margin: 0rpx;
+  margin-top: 28rpx
+}
+.collectButton::after{
+  border: none
+}
+.integral{
+  display: flex;
+  position: fixed;
+  right: 40rpx;
+  font-size: 28rpx;
+  margin-top: 40rpx
+}
+.courseBasicInfoArea{
+  display: flex;
+  flex-direction: column
+}
+.courseBasicInfo{
+  margin-left: 40rpx;
+  margin-bottom: 20rpx;
+  font-size: 34rpx;
+  color: #000;
+  opacity: 0.7
+}
+.courseIntroArea{
+  display: flex;
+  flex-direction: column;
+  height: 400rpx;
+  background-color: #fff;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  padding-top: 34rpx;
+  margin:2rpx;
+  margin-top: 20rpx
+}
+.courseIntroTitle{
+  margin-bottom: 24rpx;
+  font-size: 34rpx;
+  color: #000
+}
+.courseIntro{
+  font-size: 34rpx;
+  color: #999999
+}
+.joinButton{
+  width: 360rpx;
+  height: 90rpx;
+  margin-top: 120rpx;
+  font-size: 36rpx;
+  background-color: transparent;
+  color: #1AAD19;
+  border-radius: 8rpx
+}
+.joinButton::after{
+  border: 4rpx solid #1AAD19
+}

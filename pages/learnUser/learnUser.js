@@ -6,7 +6,7 @@ Page({
    */
   data: {
     username:'小草',
-    integral:'20',
+    integral:'50',
 
     recommendTitle1:'课程名称1',
     recommendIntro1:'课程简介1',

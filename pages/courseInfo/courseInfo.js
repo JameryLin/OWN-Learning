@@ -5,7 +5,19 @@ Page({
    * 页面的初始数据
    */
   data: {
+    integral:'50',
+    courseCategory:'计算机',
+    courseTeacher:'某某某',
+    courseSource:'某某教材',
+    courseIntegral:'20',
+    courseIntro:'课程简介',
 
+    /**
+     * 按钮joinButton文案：
+     * 学习用户：一开始文案为“加入学习”，点击后(需积分则弹出积分兑换弹窗，免费则加入成功)，加入成功后按钮文案变为“开始学习”
+     * 系统管理员：文案为“查看内容”
+     */
+    joinButton:'加入学习',
   },
 
   /**
