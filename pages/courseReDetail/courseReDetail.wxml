@@ -1,2 +1,17 @@
 <!--pages/courseReDetail/courseReDetail.wxml-->
-<text>pages/courseReDetail/courseReDetail.wxml</text>
+<view>
+  <form>
+    <text class="detailInfo">{{sectionNumber}}</text>
+    <view class="detailItem">
+      <text space="ensp">本节名称  </text>
+      <input placeholder-style="color:gray" style="width:520rpx" placeholder="本节名称，即为目录项内容" confirm-type="done"/>
+    </view>
+
+    <text class="detailInfo" style="margin-top:48rpx">内容</text>
+    <textarea class="detailContent" placeholder-style="color:gray" placeholder="本节课学习的具体内容"></textarea>
+    
+    <button class="nextSection">添加下一节</button>
+    <button class="releaseCourse">发布课程</button>
+  </form>
+  
+</view>

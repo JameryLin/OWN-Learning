@@ -1,1 +1,52 @@
 /* pages/courseReDetail/courseReDetail.wxss */
+.detailInfo{
+  display: flex;
+  margin-top: 28rpx;
+  margin-bottom: 24rpx;
+  margin-left: 28rpx;
+  font-size: 34rpx;
+  opacity: 0.6
+}
+.detailItem{
+  display: flex;
+  height: 88rpx;
+  background-color: #fff;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  align-items: center;
+  margin:2rpx
+}
+.detailContent{
+  display: flex;
+  width: 750rpx;
+  height: 520rpx;
+  background-color: #fff;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  padding-top: 30rpx;
+  margin:2rpx
+}
+.nextSection{
+  width: 670rpx;
+  height: 92rpx;
+  margin-top: 46rpx;
+  font-size: 36rpx;
+  background-color: #1AAD19;
+  color: #fff;
+  border-radius: 10rpx
+}
+.nextSection::after{
+  border: 2rpx solid #179E16
+}
+.releaseCourse{
+  width: 360rpx;
+  height: 92rpx;
+  margin-top: 48rpx;
+  font-size: 36rpx;
+  background-color: transparent;
+  color: #1AAD19;
+  border-radius: 10rpx
+}
+.releaseCourse::after{
+  border: 2rpx solid #1AAD19
+}
