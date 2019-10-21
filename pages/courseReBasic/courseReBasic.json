@@ -1,3 +1,8 @@
 {
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "发布课程",
+  "navigationBarTextStyle": "black",
+
   "usingComponents": {}
 }

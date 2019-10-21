@@ -1,1 +1,30 @@
 /* pages/courseReBasic/courseReBasic.wxss */
+.basicInfo{
+  display: flex;
+  margin-top: 28rpx;
+  margin-bottom: 24rpx;
+  margin-left: 28rpx;
+  font-size: 34rpx;
+  opacity: 0.6
+}
+.basicItem{
+  display: flex;
+  height: 88rpx;
+  background-color: #fff;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  align-items: center;
+  margin:2rpx
+}
+.nextStep{
+  width: 220rpx;
+  height: 72rpx;
+  margin-top: 96rpx;
+  font-size: 30rpx;
+  background-color: transparent;
+  color: #1AAD19;
+  border-radius: 6rpx
+}
+.nextStep::after{
+  border: 2rpx solid #1AAD19
+}

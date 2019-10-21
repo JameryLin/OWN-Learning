@@ -1,11 +1,12 @@
 {
   "pages": [
+    
+    "pages/courseReBasic/courseReBasic",
     "pages/courseManage/courseManage",
     "pages/sysAdmin/sysAdmin",
     "pages/signup/signup",
     "pages/login/login",
     
-    "pages/courseReBasic/courseReBasic",
     "pages/courseReDetail/courseReDetail",
     "pages/learnUser/learnUser",
     "pages/learnSpace/learnSpace",
