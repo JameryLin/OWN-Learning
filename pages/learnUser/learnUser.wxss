@@ -73,3 +73,25 @@
   margin-left: 48rpx;
   margin-bottom: 48rpx
 }
+
+.searchResult{
+  display: flex;
+  margin-top: 28rpx;
+  margin-bottom: 28rpx;
+  margin-left: 28rpx;
+  font-size: 26rpx;
+  opacity: 0.6
+}
+.searchResultItem{
+  display: flex;
+  height: 88rpx;
+  background-color: #fff;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  align-items: center;
+  margin:2rpx
+}
+.seeMore{
+  position: fixed;
+  right: 30rpx
+}

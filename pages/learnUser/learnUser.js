@@ -22,6 +22,8 @@ Page({
 
     recommendTitle5: '课程名称5',
     recommendIntro5: '课程简介5',
+
+    searchcoursename:'课程名称'
   },
 
   /**

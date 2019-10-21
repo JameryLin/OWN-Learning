@@ -16,7 +16,7 @@
 
   <text class="areaTitle" style="margin-top:50rpx">✨推荐课程...</text>
 
-  <swiper indicator-dots="true" indicator-color="rgba(25, 173, 25, 0.4)" indicator-active-color="rgba(25, 173, 25)" interval="3000" autoplay="true" duration="1000" circular="true">
+  <swiper style="display:block" indicator-dots="true" indicator-color="rgba(25, 173, 25, 0.4)" indicator-active-color="rgba(25, 173, 25)" interval="3000" autoplay="true" duration="1000" circular="true">
     <swiper-item>
       <view class="recommendItem">
         <text class="recommendTitle">{{recommendTitle1}}</text>
@@ -48,5 +48,20 @@
       </view>
     </swiper-item>
   </swiper>
+
+  <!--搜索结果的布局,当前为隐藏状态,把none改为block即可显示>
+  <view style="display:none" >
+    <text class="searchResult">搜索结果</text>
+    <view class="searchResultItem">
+      <text>{{searchcoursename}}</text>
+      <label class="seeMore"> ❯ </label>
+    </view>
+    <view class="searchResultItem">
+      <text>{{searchcoursename}}</text>
+      <label class="seeMore"> ❯ </label>
+    </view>
+  </view>
+  <-->
+
   <button class="userQuit">退出</button>
 </view>
