@@ -18,6 +18,9 @@ Page({
      * 系统管理员：文案为“查看内容”
      */
     joinButton:'加入学习',
+
+    dialogShow: false,
+    buttons: [{ text: '取消' }, { text: '兑换' }],
   },
 
   /**
@@ -38,7 +41,17 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    this.setData({
+      dialogShow: false   //true
+    })
+  },
 
+  tapDialogButton(e) {
+    console.log('dialog', e.detail)
+    this.setData({
+      dialogShow: false,
+      showOneButtonDialog: false
+    })
   },
 
   /**

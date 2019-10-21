@@ -15,3 +15,7 @@
   </form>
   
 </view>
+
+<mp-dialog title="发布课程" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+    <view>课程发布后暂无法做修改，请检查内容，确认无误后发布!</view>
+</mp-dialog>

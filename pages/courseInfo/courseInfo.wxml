@@ -21,3 +21,7 @@
   <button class="joinButton">{{joinButton}}</button>
   
 </view>
+
+<mp-dialog title="加入课程" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+    <view>使用 <text>{{courseIntegral}}</text> 积分兑换课程?</view>
+</mp-dialog>

@@ -5,7 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    sectionNumber:'第一节'
+    sectionNumber:'第一节',
+
+    dialogShow: false,
+    buttons: [{ text: '取消' }, { text: '发布' }],
   },
 
   /**
@@ -26,7 +29,17 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    this.setData({
+      dialogShow: false   //true
+    })
+  },
 
+  tapDialogButton(e) {
+    console.log('dialog', e.detail)
+    this.setData({
+      dialogShow: false,
+      showOneButtonDialog: false
+    })
   },
 
   /**

@@ -4,5 +4,7 @@
   "navigationBarTitleText": "课程信息",
   "navigationBarTextStyle": "black",
   
-  "usingComponents": {}
+  "usingComponents": {
+    "mp-dialog": "../../weui-miniprogram/dialog/dialog"
+  }
 }

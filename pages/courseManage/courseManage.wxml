@@ -21,6 +21,8 @@
     <text>{{coursename}}</text>
     <label class="seeMore"> ❯ </label>
   </view>
-  
-  
 </view>
+
+<mp-dialog title="删除课程" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+    <view><icon type="warn" size="48rpx"></icon> 确认删除课程:<text>{{coursename}}</text>?</view>
+</mp-dialog>

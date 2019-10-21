@@ -1,14 +1,14 @@
 {
   "pages": [
 
-    "pages/courseLearn/courseLearn",
     "pages/courseInfo/courseInfo",
+    "pages/courseManage/courseManage",
+    "pages/courseReDetail/courseReDetail",
+    "pages/courseLearn/courseLearn",
     "pages/learnCollect/learnCollect",
     "pages/learnSpace/learnSpace",
-    "pages/learnUser/learnUser",
-    "pages/courseReDetail/courseReDetail",
-    "pages/courseReBasic/courseReBasic",
-    "pages/courseManage/courseManage",
+    "pages/learnUser/learnUser",    
+    "pages/courseReBasic/courseReBasic",    
     "pages/sysAdmin/sysAdmin",
     "pages/signup/signup",
     "pages/login/login",    

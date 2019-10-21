@@ -1,5 +1,6 @@
 /**app.wxss**/
 @import './weui-miniprogram/searchbar/searchbar.wxss';
+@import './weui-miniprogram/dialog/dialog.wxss';
 
 .container {
   height: 100%;
