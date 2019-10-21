@@ -1,2 +1,52 @@
 <!--pages/learnUser/learnUser.wxml-->
-<text>pages/learnUser/learnUser.wxml</text>
+<view>
+  <view class="userInfo">
+    <text class="userName">{{username}}</text>
+    <text class="ownRoom">·OWN-room</text>
+    <text space="ensp" class="integral">积分: {{integral}}</text>
+  </view>
+
+  <view class="userBtArea">
+    <button class="userButton">学习</button>
+    <button class="userButton">收藏</button>
+  </view>
+
+  <text class="areaTitle">✨探索课程...</text>
+  <mp-searchbar placeholder="请输入关键字搜索" cancel="true" bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
+
+  <text class="areaTitle" style="margin-top:50rpx">✨推荐课程...</text>
+
+  <swiper indicator-dots="true" indicator-color="rgba(25, 173, 25, 0.4)" indicator-active-color="rgba(25, 173, 25)" interval="3000" autoplay="true" duration="1000" circular="true">
+    <swiper-item>
+      <view class="recommendItem">
+        <text class="recommendTitle">{{recommendTitle1}}</text>
+        <text class="recommendIntro">{{recommendIntro1}}</text>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="recommendItem">
+        <text class="recommendTitle">{{recommendTitle2}}</text>
+        <text class="recommendIntro">{{recommendIntro2}}</text>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="recommendItem">
+        <text class="recommendTitle">{{recommendTitle3}}</text>
+        <text class="recommendIntro">{{recommendIntro3}}</text>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="recommendItem">
+        <text class="recommendTitle">{{recommendTitle4}}</text>
+        <text class="recommendIntro">{{recommendIntro4}}</text>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="recommendItem">
+        <text class="recommendTitle">{{recommendTitle5}}</text>
+        <text class="recommendIntro">{{recommendIntro5}}</text>
+      </view>
+    </swiper-item>
+  </swiper>
+  <button class="userQuit">退出</button>
+</view>

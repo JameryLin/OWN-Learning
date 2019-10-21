@@ -1,4 +1,6 @@
 /**app.wxss**/
+@import './weui-miniprogram/searchbar/searchbar.wxss';
+
 .container {
   height: 100%;
   display: flex;
