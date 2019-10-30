@@ -1,11 +1,21 @@
 // pages/login/login.js
+
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    userid:"",
+    userpassword:"",
+  },
 
+  useridInput:function(e){
+    this.data.userid=e.detail.value;
+  },
+  userpasswordInput: function (e) {
+    this.data.userpassword = e.detail.value;
   },
 
   /**
@@ -13,6 +23,42 @@ Page({
    */
   onLoad: function (options) {
 
+  },
+
+
+  checkLogin:function(user){
+
+    var id=this.data.userid;
+    var password=this.data.userpassword;
+
+    //读取数据库中的用户账号和密码
+    var useridRe="123";
+    var userpasswordRe="234";
+    //读取数据库中的管理员账号和密码
+    var adminidRe="321";
+    var adminpasswordRe="432";
+    
+    if (id == useridRe || id == adminidRe){
+      if (id == useridRe && password == userpasswordRe){
+        wx.navigateTo({
+          url: '../learnUser/learnUser',
+        })
+      } else if (id == adminidRe && password == adminpasswordRe) {
+        wx.navigateTo({
+          url: '../sysAdmin/sysAdmin',
+        })
+      }else{
+        console.log("密码错误");
+      }
+    }else{
+      console.log("无当前账号信息");
+    }
+    
+  },
+  toSignUp:function(){
+    wx.navigateTo({
+      url: '../signup/signup',
+    })
   },
 
   /**
