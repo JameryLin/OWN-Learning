@@ -1,7 +1,6 @@
 {
   "pages": [
 
-    
 
     "pages/login/login",
     "pages/courseInfo/courseInfo",
@@ -10,8 +9,8 @@
     "pages/courseLearn/courseLearn",
     "pages/learnCollect/learnCollect",
     "pages/learnSpace/learnSpace",
-    "pages/learnUser/learnUser",    
-    "pages/courseReBasic/courseReBasic",    
+    "pages/learnUser/learnUser",
+    "pages/courseReBasic/courseReBasic",
     "pages/sysAdmin/sysAdmin",
     "pages/signup/signup",
         
@@ -19,6 +18,7 @@
     "pages/index/index",
     "pages/logs/logs"
   ],
+  
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",

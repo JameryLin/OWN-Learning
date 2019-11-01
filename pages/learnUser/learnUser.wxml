@@ -63,5 +63,5 @@
     </view>
   </view>
 
-  <button class="userQuit">退出</button>
+  <button bindtap="uQuit" class="userQuit">退出</button>
 </view>

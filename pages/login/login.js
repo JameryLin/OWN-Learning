@@ -26,38 +26,61 @@ Page({
   },
 
 
-  checkLogin:function(user){
+  checkLogin:function(){
 
     var id=this.data.userid;
     var password=this.data.userpassword;
 
-    //读取数据库中的用户账号和密码
+    /////////////////Jamery say--------
+    //读取数据库中的用户账号和密码分别赋值
     var useridRe="123";
     var userpasswordRe="234";
-    //读取数据库中的管理员账号和密码
+    //读取数据库中的管理员账号和密码分别赋值
     var adminidRe="321";
     var adminpasswordRe="432";
     
     if (id == useridRe || id == adminidRe){
       if (id == useridRe && password == userpasswordRe){
-        wx.navigateTo({
+        wx.reLaunch({
           url: '../learnUser/learnUser',
         })
+        wx.hideHomeButton();
       } else if (id == adminidRe && password == adminpasswordRe) {
-        wx.navigateTo({
+        wx.reLaunch({
           url: '../sysAdmin/sysAdmin',
         })
+        wx.hideHomeButton();
       }else{
         console.log("密码错误");
+        wx.showToast({
+          title: '密码错误,请重新输入',
+          icon:'none',
+          duration:1000,
+          mask:true
+        })
       }
     }else{
       console.log("无当前账号信息");
+      wx.showToast({
+        title: '无当前账号信息,请先注册',
+        icon: 'none',
+        duration: 1000,
+        mask: true
+      })
     }
     
   },
   toSignUp:function(){
     wx.navigateTo({
       url: '../signup/signup',
+    })
+  },
+  forgotPass:function(){
+    wx.showToast({
+      title: '现在还不能找回密码,努力想想吧',
+      icon: 'none',
+      duration: 1000,
+      mask: true
     })
   },
 

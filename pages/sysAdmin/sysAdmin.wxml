@@ -6,5 +6,5 @@
   <button class="adminButton" style="margin-top:128rpx">管理课程</button>
   <button class="adminButton" style="margin-top:80rpx">发布课程</button>
   <text class="adminMoreing">更多功能即将上线...敬请期待!</text>
-  <button class="adminQuit">退出</button>
+  <button bindtap="aQuit" class="adminQuit">退出</button>
 </view>

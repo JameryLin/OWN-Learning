@@ -25,6 +25,7 @@ page{
   width: 220rpx;
   height: 90rpx;
   margin-top: 80rpx;
+  margin-bottom: 100rpx;
   font-size: 36rpx;
   background-color: transparent;
   color: #1AAD19;

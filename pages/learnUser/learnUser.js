@@ -33,18 +33,33 @@ Page({
 
   },
 
+  uQuit:function(){
+    wx.showModal({
+      title: '退出提醒',
+      content: '确认退出当前账号？',
+      success:function(res){
+        if(res.confirm){
+          wx.reLaunch({
+            url: '../login/login',
+          })
+        }
+      }
+    })
+  },
+
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    wx.hideHomeButton();
   },
 
   /**

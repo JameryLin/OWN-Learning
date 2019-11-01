@@ -28,7 +28,7 @@
 .adminQuit{
   width: 120rpx;
   height: 70rpx;
-  font-size: 30rpx;
+  font-size: 28rpx;
   float: left;
   position: fixed;
   bottom: 0;

@@ -3,7 +3,7 @@
   <form>
     <text class="detailInfo">{{sectionNumber}}</text>
     <view class="detailItem">
-      <text space="ensp">本节名称  </text>
+      <text space="ensp" style="font-size:34rpx">本节名称  </text>
       <input placeholder-style="color:gray" style="width:520rpx" placeholder="本节名称，即为目录项内容" confirm-type="done"/>
     </view>
 
