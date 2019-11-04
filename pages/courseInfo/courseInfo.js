@@ -5,12 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    integral:'50',
-    courseCategory:'计算机',
-    courseTeacher:'某某某',
-    courseSource:'某某教材',
-    courseIntegral:'20',
-    courseIntro:'课程简介',
+    integral:"",            //用户所拥有的积分
+    courseCategory:"",      //课程分类
+    courseTeacher:"",       //讲师
+    courseSource:"",        //课程来源
+    courseIntegral:"",      //加入课程需要消耗的积分
+    courseIntro:"",         //课程简介
 
     /**
      * 按钮joinButton文案：
@@ -28,8 +28,36 @@ Page({
    */
   onLoad: function (options) {
     var joinButtonText=options.joinButton;
+
+    /////////////////Jamery say--------
+
+    //id是轮播中的排位，一共有五个课程轮播，从1-5，对应五个课程
+    var id=options.id; 
+    //读取数据库中的对应数据
+    var integralRe ="50";
+    var courseCategoryRe ="";
+    var courseTeacherRe ="";
+    var courseSourceRe ="";
+    var courseIntegralRe ="";
+    var courseIntroRe ="";
+    
+    //根据id值读取并赋予对应的数据
+    courseCategoryRe = "计算机";
+    courseTeacherRe = "某某某";
+    courseSourceRe = "某某教材";
+    courseIntegralRe = "20";
+    courseIntroRe = "课程简介";
+    
+
     this.setData({
-      joinButton:joinButtonText
+      joinButton:joinButtonText,
+      
+      integral: integralRe,
+      courseCategory: courseCategoryRe,
+      courseTeacher: courseTeacherRe,
+      courseSource: courseSourceRe,
+      courseIntegral: courseIntegralRe,
+      courseIntro: courseIntroRe,
     })
   },
 
