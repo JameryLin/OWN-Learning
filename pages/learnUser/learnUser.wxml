@@ -7,8 +7,8 @@
   </view>
 
   <view class="userBtArea">
-    <button class="userButton">学习</button>
-    <button class="userButton">收藏</button>
+    <button bindtap="uToLearnPage" class="userButton">学习</button>
+    <button bindtap="uToCollectPage" class="userButton">收藏</button>
   </view>
 
   <text class="areaTitle">✨探索课程...</text>

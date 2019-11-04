@@ -33,6 +33,18 @@ Page({
 
   },
 
+  uToLearnPage:function(){
+    wx.navigateTo({
+      url: '../learnSpace/learnSpace',
+    })
+  },
+
+  uToCollectPage:function(){
+    wx.navigateTo({
+      url: '../learnCollect/learnCollect',
+    })
+  },
+
   uQuit:function(){
     wx.showModal({
       title: '退出提醒',
