@@ -7,19 +7,19 @@
     <form>
       <view class="signupItem" style="margin-top:80rpx;margin-bottom:40rpx">
         <text space="ensp" style="font-size:34rpx">  昵称    </text>
-        <input bindinput="newnameInput" maxlength="5" placeholder-style="color:gray" style="width:520rpx" placeholder="请设置昵称(不超过5个字符)" confirm-type="done"/>
+        <input bindinput="new_nameInput" maxlength="5" placeholder-style="color:gray" style="width:520rpx" placeholder="请设置昵称(不超过5个字符)" confirm-type="done"/>
       </view>
       <view class="signupItem">
         <text space="ensp" style="font-size:34rpx">  账号    </text>
-        <input bindinput="newidInput" placeholder-style="color:gray" style="width:520rpx" placeholder="请输入邮箱" confirm-type="done"/>
+        <input bindinput="new_idInput" placeholder-style="color:gray" style="width:520rpx" placeholder="请输入邮箱" confirm-type="done"/>
       </view>
       <view class="signupItem">
         <text space="ensp" style="font-size:34rpx">  密码    </text>
-        <input bindinput="newpassInput" placeholder-style="color:gray" style="width:520rpx" placeholder="请设置密码" confirm-type="done" password="true"/>
+        <input bindinput="new_passwordInput" placeholder-style="color:gray" style="width:520rpx" placeholder="请设置密码" confirm-type="done" password="true"/>
       </view>
       <view class="signupItem">
         <text space="ensp" style="font-size:34rpx">确认密码  </text>
-        <input bindinput="newconfirmInput" placeholder-style="color:gray" style="width:520rpx" placeholder="请设置密码" confirm-type="done" password="true"/>
+        <input bindinput="new_confirmInput" placeholder-style="color:gray" style="width:520rpx" placeholder="请设置密码" confirm-type="done" password="true"/>
       </view>
       <button bindtap="toSignUp" class="signupButton" form-type="submit">立即注册</button>
     </form>

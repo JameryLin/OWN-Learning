@@ -15,6 +15,16 @@ Page({
 
   },
 
+  toCourseManage:function(){
+    wx.navigateTo({
+      url: '../courseManage/courseManage',
+    })
+  },
+  toCourseRelease:function(){
+    wx.navigateTo({
+      url: '../courseReBasic/courseReBasic',
+    })
+  },
   aQuit:function(){
     wx.showModal({
       title: '退出提醒',

@@ -7,15 +7,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-    userid:"",
-    userpassword:"",
+    user_id:"",
+    user_password:"",
   },
 
-  useridInput:function(e){
-    this.data.userid=e.detail.value;
+  user_idInput:function(e){
+    this.data.user_id=e.detail.value;
   },
-  userpasswordInput: function (e) {
-    this.data.userpassword = e.detail.value;
+  user_passwordInput: function (e) {
+    this.data.user_password = e.detail.value;
   },
 
   /**
@@ -28,24 +28,24 @@ Page({
 
   checkLogin:function(){
 
-    var id=this.data.userid;
-    var password=this.data.userpassword;
+    var id=this.data.user_id;
+    var password=this.data.user_password;
 
     /////////////////Jamery say--------
     //读取数据库中的用户账号和密码分别赋值
-    var useridRe="123";
-    var userpasswordRe="234";
+    var user_id_Re="123";
+    var user_password_Re="234";
     //读取数据库中的管理员账号和密码分别赋值
-    var adminidRe="321";
-    var adminpasswordRe="432";
+    var admin_id_Re="321";
+    var admin_password_Re="432";
     
-    if (id == useridRe || id == adminidRe){
-      if (id == useridRe && password == userpasswordRe){
+    if (id == user_id_Re || id == admin_id_Re){
+      if (id == user_id_Re && password == user_password_Re){
         wx.reLaunch({
           url: '../learnUser/learnUser',
         })
         wx.hideHomeButton();
-      } else if (id == adminidRe && password == adminpasswordRe) {
+      } else if (id == admin_id_Re && password == admin_password_Re) {
         wx.reLaunch({
           url: '../sysAdmin/sysAdmin',
         })

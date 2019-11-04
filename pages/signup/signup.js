@@ -5,23 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-    newname:"",
-    newid:"",
-    newpassword:"",
-    newconfirm:"",
+    new_name:"",
+    new_id:"",
+    new_password:"",
+    new_confirm:"",
   },
 
-  newnameInput:function(e){
-    this.data.newname=e.detail.value;
+  new_nameInput:function(e){
+    this.data.new_name=e.detail.value;
   },
-  newidInput:function(e){
-    this.data.newid=e.detail.value;
+  new_idInput:function(e){
+    this.data.new_id=e.detail.value;
   },
-  newpassInput:function(e){
-    this.data.newpassword=e.detail.value;
+  new_passwordInput:function(e){
+    this.data.new_password=e.detail.value;
   },
-  newconfirmInput:function(e){
-    this.data.newconfirm=e.detail.value;
+  new_confirmInput:function(e){
+    this.data.new_confirm=e.detail.value;
   },
 
   /**
@@ -32,10 +32,10 @@ Page({
   },
 
   toSignUp:function(){
-    var name=this.data.newname;
-    var id=this.data.newid;
-    var password=this.data.newpassword;
-    var confirm=this.data.newconfirm;
+    var name=this.data.new_name;
+    var id=this.data.new_id;
+    var password=this.data.new_password;
+    var confirm=this.data.new_confirm;
 
     if (name == "" || id == "" || password == "" || confirm == ""){
       wx.showToast({

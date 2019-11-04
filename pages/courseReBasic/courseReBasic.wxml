@@ -4,35 +4,35 @@
   <form>
     <view class="basicItem">
       <text space="ensp" style="font-size:34rpx">课程名称  </text>
-      <input placeholder-style="color:gray" style="width:520rpx" placeholder="请输入课程名称" confirm-type="done"/>
+      <input bindinput="course_nameInput" placeholder-style="color:gray" style="width:520rpx" placeholder="请输入课程名称" confirm-type="done"/>
     </view>
     <view class="basicItem">
       <text space="ensp" style="font-size:34rpx">  类别    </text>
-      <input placeholder-style="color:gray" style="width:520rpx" placeholder="请输入课程所属类别" confirm-type="done"/>
+      <input bindinput="course_categoryInput" placeholder-style="color:gray" style="width:520rpx" placeholder="请输入课程所属类别" confirm-type="done"/>
     </view>
     <view class="basicItem" style="margin-bottom:24rpx">
       <text space="ensp" style="font-size:34rpx">  简介    </text>
-      <input placeholder-style="color:gray" style="width:520rpx" placeholder="请输入课程简介" confirm-type="done"/>
+      <input bindinput="course_introInput" placeholder-style="color:gray" style="width:520rpx" placeholder="请输入课程简介" confirm-type="done"/>
     </view>
     
     <view class="basicItem">
       <text space="ensp" style="font-size:34rpx">  讲师    </text>
-      <input placeholder-style="color:gray" style="width:520rpx" placeholder="请输入课程讲师" confirm-type="done"/>
+      <input bindinput="course_teacherInput" placeholder-style="color:gray" style="width:520rpx" placeholder="请输入课程讲师" confirm-type="done"/>
     </view>
     <view class="basicItem">
       <text space="ensp" style="font-size:34rpx">  来源    </text>
-      <input placeholder-style="color:gray" style="width:520rpx" placeholder="请输入课程来源" confirm-type="done"/>
+      <input bindinput="course_sourceInput" placeholder-style="color:gray" style="width:520rpx" placeholder="请输入课程来源" confirm-type="done"/>
     </view>
     <view class="basicItem">
       <text space="ensp" style="font-size:34rpx"> 搜索词   </text>
-      <input placeholder-style="color:gray" style="width:520rpx" placeholder="请输入课程搜索关键词" confirm-type="done"/>
+      <input bindinput="course_searchInput" placeholder-style="color:gray" style="width:520rpx" placeholder="请输入课程搜索关键词" confirm-type="done"/>
     </view>
 
     <text class="basicInfo">加入条件</text>
     <view class="basicItem">
       <text space="ensp" style="font-size:34rpx">所需积分  </text>
-      <input placeholder-style="color:gray" style="width:520rpx" placeholder="所需积分值，免费则0" confirm-type="done"/>
+      <input bindinput="course_integralInput" placeholder-style="color:gray" style="width:520rpx" placeholder="所需积分值，免费则0" confirm-type="done"/>
     </view>
-    <button class="nextStep">下一步</button>
+    <button bindtap="toReDetail" class="nextStep">下一步</button>
   </form>
 </view>

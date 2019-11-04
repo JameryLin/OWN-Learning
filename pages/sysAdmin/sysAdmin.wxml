@@ -3,8 +3,8 @@
   <view class="welcomeInfo">
     <text>系统管理员，欢迎你!</text>
   </view>
-  <button class="adminButton" style="margin-top:128rpx">管理课程</button>
-  <button class="adminButton" style="margin-top:80rpx">发布课程</button>
+  <button bindtap="toCourseManage" class="adminButton" style="margin-top:128rpx">管理课程</button>
+  <button bindtap="toCourseRelease" class="adminButton" style="margin-top:80rpx">发布课程</button>
   <text class="adminMoreing">更多功能即将上线...敬请期待!</text>
   <button bindtap="aQuit" class="adminQuit">退出</button>
 </view>

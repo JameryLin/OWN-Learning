@@ -11,11 +11,11 @@
     <form>
       <view class="loginItem">
         <text space="ensp" style="font-size:34rpx">  账号    </text>
-        <input bindinput="useridInput" placeholder-style="color:gray" style="width:520rpx" placeholder="请输入账号" confirm-type="done"/>
+        <input bindinput="user_idInput" placeholder-style="color:gray" style="width:520rpx" placeholder="请输入账号" confirm-type="done"/>
       </view>
       <view class="loginItem">
         <text space="ensp"  style="font-size:34rpx">  密码    </text>
-        <input bindinput="userpasswordInput" placeholder-style="color:gray" style="width:520rpx" placeholder="请输入密码" confirm-type="done" password="true"/>
+        <input bindinput="user_passwordInput" placeholder-style="color:gray" style="width:520rpx" placeholder="请输入密码" confirm-type="done" password="true"/>
       </view>
       <text bindtap="forgotPass" class="loginForget">忘记密码?</text>
       <button bindtap="checkLogin" class="loginButton" form-type="submit">登录</button>
