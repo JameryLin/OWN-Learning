@@ -61,6 +61,40 @@ Page({
     })
   },
 
+  joinButtonClick:function(){
+    if (this.data.joinButton == "加入学习" && this.data.courseIntegral!=0){
+      wx.showModal({
+        title: '加入课程',
+        content: '使用' + this.data.courseIntegral+'积分兑换课程?',
+        confirmText: '兑换',
+        success:function(res){
+          if(res.confirm){
+            /////////////////Jamery say--------
+            //减积分，换文案
+            //this.setData({
+              //integral: integral - courseIntegral
+            //}),
+
+            wx.showToast({
+              title: '加入成功',
+              icon: 'success',
+              duration: 1000,
+              mask: true,
+              success: function () {
+                setTimeout(function () {
+                  var joinButton = '开始学习';
+                  //wx.reLaunch({
+                    //url: '../courseInfo/courseInfo?joinButton=' + joinButton,
+                  //})
+                }, 1000);
+              }
+            })
+          }
+        }
+      })
+    }
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
