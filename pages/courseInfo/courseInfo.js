@@ -17,7 +17,7 @@ Page({
      * 学习用户：一开始文案为“加入学习”，点击后(需积分则弹出积分兑换弹窗，免费则加入成功)，加入成功后按钮文案变为“开始学习”
      * 系统管理员：文案为“查看内容”
      */
-    joinButton:'加入学习',
+    joinButton:"",
 
     dialogShow: false,
     buttons: [{ text: '取消' }, { text: '兑换' }],
@@ -27,7 +27,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var joinButtonText=options.joinButton;
+    this.setData({
+      joinButton:joinButtonText
+    })
   },
 
   /**
@@ -41,8 +44,10 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    
+
     this.setData({
-      dialogShow: false   //true
+      dialogShow: false,   //true
     })
   },
 
@@ -65,7 +70,11 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    if (this.data.joinButton == "查看内容") {
+      wx.reLaunch({
+        url: '../sysAdmin/sysAdmin',
+      })
+    }
   },
 
   /**

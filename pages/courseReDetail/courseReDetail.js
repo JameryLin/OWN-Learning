@@ -6,9 +6,6 @@ Page({
    */
   data: {
     sectionNumber:'第一节',
-
-    dialogShow: false,
-    buttons: [{ text: '取消' }, { text: '发布' }],
   },
 
   /**
@@ -16,6 +13,58 @@ Page({
    */
   onLoad: function (options) {
 
+  },
+
+  toCourseRelease:function(){
+    wx.showModal({
+      title: '发布课程',
+      content: '课程发布后暂无法做修改，请检查内容，确认无误后发布!',
+      confirmText:'发布',
+      success: function (res) {
+        if (res.confirm) {
+          /*//////////////Jamery say--------
+          //在这里把数据写入数据库，和下面3个toast结合使用
+          //写入时候弹出toast发布中
+          //写入成功则弹出toast发布成功,并跳转到课程信息页，按钮为查看内容
+          //写入失败则弹出toast发布失败
+          //
+          */
+
+          /*
+          wx.showToast({
+            title: '发布中',
+            icon: 'loading',
+            duration:  ,  //持续时间
+            mask: true,
+          })
+          */
+          wx.showToast({
+            title: '发布成功',
+            icon: 'success',
+            duration: 1000,
+            mask: true,
+            success: function () {
+              setTimeout(function () {
+                var joinButton='查看内容';
+                wx.navigateTo({                
+                  url: '../courseInfo/courseInfo?joinButton=' + joinButton,
+                })                
+              }, 1000);
+            }
+          })
+
+          /*
+          wx.showToast({
+            title: '发布失败',
+            icon: 'none',
+            duration: 1000,
+            mask: true,
+          })
+          */
+            
+        }
+      }
+    })
   },
 
   /**

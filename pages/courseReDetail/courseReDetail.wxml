@@ -11,11 +11,7 @@
     <textarea class="detailContent" placeholder-style="color:gray" placeholder="本节课学习的具体内容"></textarea>
     
     <button class="nextSection">添加下一节</button>
-    <button class="releaseCourse">发布课程</button>
+    <button bindtap="toCourseRelease" class="releaseCourse">发布课程</button>
   </form>
   
 </view>
-
-<mp-dialog title="发布课程" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
-    <view>课程发布后暂无法做修改，请检查内容，确认无误后发布!</view>
-</mp-dialog>
